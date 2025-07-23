@@ -66,7 +66,7 @@
 #'
 #' @importFrom GenomicRanges promoters trim
 #' @importFrom IRanges IRanges
-#' @importFrom GenomeInfoDb seqlevels seqlevels<- seqinfo seqinfo<-
+#' @importFrom Seqinfo seqlevels seqlevels<- seqinfo seqinfo<-
 #' @importFrom S4Vectors mcols
 #' @importFrom utils read.delim
 #' @importFrom methods is
@@ -132,9 +132,9 @@ handle_tc_from_cage <- function(sname, tc_gr, cager_obj, qLow = 0.1, qUp = 0.9,
     #                                 returnInterquantileWidth = TRUE,
     #                                 qLow = 0.1, qUp = 0.9)
     ## At present CAGEr tagClusters loose this information, so add them
-    # seqlevels(this_gr) <- GenomeInfoDb::seqlevels(
+    # seqlevels(this_gr) <- Seqinfo::seqlevels(
     #     CAGEr::CTSStagCountSE(cager_obj))
-    # seqinfo(this_gr)   <- GenomeInfoDb::seqinfo(
+    # seqinfo(this_gr)   <- Seqinfo::seqinfo(
     #     CAGEr::CTSStagCountSE(cager_obj))
 
     if (any("score" == names(S4Vectors::mcols(this_gr)))) {

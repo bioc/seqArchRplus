@@ -2,7 +2,7 @@ Type: Package
 Package: seqArchRplus
 Title: Downstream analyses of promoter sequence architectures and HTML
     report generation
-Version: 1.9.0
+Version: 1.9.1
 Authors@R: 
     person("Sarvesh", "Nikumbh", , "sarvesh.nikumbh@gmail.com", 
     role = c("aut", "cre", "cph"),
@@ -37,7 +37,7 @@ Imports:
     clusterProfiler,
     cowplot,
     factoextra,
-    GenomeInfoDb,
+    Seqinfo,
     ggplot2,
     ggimage,
     graphics,
